@@ -1,0 +1,3 @@
+#!/bin/bash
+
+perl -ne 's/%%%/`cat openpgp.min.js ciphertext.js code.js`/e;print' index_spa.html > docs/index.html
