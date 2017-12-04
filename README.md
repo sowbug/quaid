@@ -14,7 +14,7 @@ Hopefully you're reading this before the following actually happens to you.
 # Overview
 * Create a text file containing your secrets -- [Google backup codes](https://support.google.com/accounts/answer/1187538?hl=en), Dropbox 2FA OTP secret, emergency phone numbers, etc.
 * Encrypt the file using GPG's symmetric encryption (`gpg -c -a secrets.txt`).
-* Adapt the resulting `secrets.txt.asc` to `ciphertext.js`.
+* Reformat the resulting `secrets.txt.asc` with `< secrets.txt.asc ./asc_to_js > ciphertext.js`.
 * Use this project to generate a single-page webapp (`./build_spa`).
 * Publish the resulting file, `docs/index.html`, on a webserver somwhere.
 * Next time you lose your phone far from home, visit the site and decrypt with whatever passphrase you used to encrypt the file.

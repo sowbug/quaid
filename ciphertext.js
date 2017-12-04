@@ -1,8 +1,9 @@
 // For this sample, the passphrase is `correct horse battery staple`
-// Generate yours with `gpg -c -a`
+// Generate yours as follows:
 //
-// Contributions welcome to automatically turn PGP message into
-// JavaScript array
+// Put secrets in plaintext.txt
+// `gpg -c -a plaintext.txt`
+// `< plaintext.txt.asc ./asc_to_js > ciphertext.js`
 
 var msg = [
   '-----BEGIN PGP MESSAGE-----',
