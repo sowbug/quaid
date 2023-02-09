@@ -4,7 +4,7 @@ import sys
 
 lines = sys.stdin.readlines()
 
-print "var msg = ["
+print("var msg = [")
 for line in lines:
-  print "  '%s'," % line.strip()
-print "].join('\\n');"
+  print("  '%s'," % line.strip())
+print("].join('\\n');")
